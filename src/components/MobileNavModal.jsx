@@ -36,9 +36,13 @@ const MobileNavModal = forwardRef(function MobileNavModal({ close }, ref) {
         ))}
       </ul>
 
-      <Link to="contact" className="flex gap-1 items-center mt-auto">
-        <p className="border-b border-white pb-0.2">Contact</p>
-        <MoveUpRight className="h-4 w-4" />
+      <Link
+        to="contact"
+        className="flex gap-1 items-center mt-auto"
+        onClick={close}
+      >
+        <p className="border-b border-white pb-0.2 text-[16px]">Contact</p>
+        <MoveUpRight className="h-3.5 w-3.5" />
       </Link>
     </div>
   );
