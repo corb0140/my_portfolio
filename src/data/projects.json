@@ -1,0 +1,79 @@
+[
+  {
+    "id": "movies",
+    "image": "/images/projects/movies.png",
+    "title": "Movies App",
+    "description": "A cross-platform mobile app for iOS and Android. Search for any movie and get all the information you need. Save your favorite movies and test your knowledge with quizzes",
+    "link": "/projects/movies",
+    "tech": ["React Native", "TypeScript", "TMDB API", "Cross-Platform"],
+    "motive": [
+      "I built this project because I enjoy discovering new movies and wanted to turn that interest into a mobile experience.",
+      "It was also an opportunity to expand my skills beyond web development and dive into cross-platform mobile development with React Native and TypeScript.",
+      "Working with the TMDB API strengthened my ability to handle real data, navigation, and state management on mobile devices."
+    ],
+    "external_links": {
+      "github": "",
+      "demo": ""
+    }
+  },
+  {
+    "id": "countries",
+    "image": "/images/projects/geocentral.png",
+    "title": "Geo Central",
+    "description": "A countries information dashboard that provides detailed country profiles, side-by-side comparisons, currency conversion, real-time weather data, and interactive quizzes to reinforce geographic knowledge.",
+    "link": "/projects/countries",
+    "tech": [
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "TanStack Router",
+      "Zustand",
+      "Countries API",
+      "Weather API",
+      "Responsive"
+    ],
+    "motive": [
+      "I created Geo Central to explore my interest in global data and build a dashboard that makes country information easy to compare.",
+      "This project helped me deepen my skills in advanced React patterns, API integration, and state management with tools like Zustand.",
+      "Working with multiple data sources taught me how to design scalable, responsive interfaces that handle real-time information smoothly."
+    ],
+    "external_links": {
+      "github": "",
+      "demo": ""
+    }
+  },
+  {
+    "id": "pokedex",
+    "image": "/images/projects/pokedex.png",
+    "title": "PokeDex",
+    "description": "A complete Pokédex experience featuring live Pokémon data, advanced filtering, and smooth UI interactions. Users can quickly search Pokémon by name or ID, filter by one or multiple types, and open detailed profile pages that include stats, abilities, moves, and full evolution trees",
+    "link": "/projects/pokedex",
+    "tech": ["React", "Redux", "Axios", "TypeScript", "Poke API", "Responsive"],
+    "motive": [
+      "I chose to build a Pokédex because Pokémon is nostalgic for me, and it offered a fun way to work with a large, structured API.",
+      "The project pushed me to refine my skills with TypeScript, Redux, and dynamic routing while handling complex data like stats and evolutions.",
+      "It strengthened my ability to create polished, interactive interfaces that present detailed information in a clean, user-friendly way."
+    ],
+    "external_links": {
+      "github": "",
+      "demo": ""
+    }
+  },
+  {
+    "id": "workout",
+    "image": "/images/projects/workout.png",
+    "title": "Workout",
+    "description": "A landing page built to market a fitness membership, showcasing premium workout access, member-only content, and compelling calls-to-action to drive sign-ups",
+    "link": "/projects/workout",
+    "tech": ["Vue", "JavaScript", "TailwindCSS", "Responsive"],
+    "motive": [
+      "This project was an opportunity to practice building a modern landing page focused on marketing a fitness membership.",
+      "I used it to improve my ability to design clean, high-impact layouts and communicate value quickly through strong visual hierarchy.",
+      "Working with Vue helped me expand my frontend skills while creating a simple, effective page optimized for conversions."
+    ],
+    "external_links": {
+      "github": "",
+      "demo": ""
+    }
+  }
+]

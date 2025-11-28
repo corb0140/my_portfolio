@@ -42,6 +42,7 @@ const MobileNavModal = forwardRef(function MobileNavModal({ close }, ref) {
         onClick={close}
       >
         <p className="border-b border-white pb-0.2 text-[16px]">Contact</p>
+
         <MoveUpRight className="h-3.5 w-3.5" />
       </Link>
     </div>

@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import Logo from "./UI/Logo";
 import gsap from "gsap";
 import MobileNavModal from "./MobileNavModal";
+import { Link } from "react-router";
 
 function Header() {
   const hamburgerMenu =
@@ -46,7 +47,9 @@ function Header() {
   return (
     <>
       <header className="p-4 flex justify-between items-center relative">
-        <Logo />
+        <Link to="/">
+          <Logo />
+        </Link>
 
         <button
           ref={buttonRef}
