@@ -65,7 +65,7 @@
     "title": "Workout",
     "description": "A landing page built to market a fitness membership, showcasing premium workout access, member-only content, and compelling calls-to-action to drive sign-ups",
     "link": "/projects/workout",
-    "tech": ["Vue", "JavaScript", "TailwindCSS", "Responsive"],
+    "tech": ["Vue", "JavaScript", "TailwindCSS"],
     "motive": [
       "This project was an opportunity to practice building a modern landing page focused on marketing a fitness membership.",
       "I used it to improve my ability to design clean, high-impact layouts and communicate value quickly through strong visual hierarchy.",

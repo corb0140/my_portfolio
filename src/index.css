@@ -3,7 +3,7 @@
 
 @theme {
   /* COLORS */
-  --color-primary: #222222;
+  --color-primary: rgb(34, 34, 34);
   --color-secondary: #7b7b7b;
   --color-tertiary: #f8f8f8;
   --color-white: #ffffff;
@@ -34,6 +34,11 @@ body {
 
 button {
   cursor: pointer;
+}
+
+input,
+textarea {
+  outline: none;
 }
 
 @layer base {

@@ -7,7 +7,7 @@ const MobileNavModal = forwardRef(function MobileNavModal({ close }, ref) {
   return (
     <div
       ref={ref}
-      className="fixed h-screen w-1/2 top-0 left-0 bg-primary flex flex-col items-center gap-4 py-10 text-white -translate-x-full"
+      className="z-10 fixed h-screen w-1/2 top-0 left-0 bg-primary flex flex-col items-center gap-4 py-10 text-white -translate-x-full"
     >
       <div className="py-2 px-1 border-white border-2 rounded-sm">
         <Logo />
