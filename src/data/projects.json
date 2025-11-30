@@ -12,9 +12,11 @@
       "Working with the TMDB API strengthened my ability to handle real data, navigation, and state management on mobile devices."
     ],
     "external_links": {
-      "github": "",
-      "demo": ""
-    }
+      "github": "https://github.com/corb0140/Movies_App_RN",
+      "demo": "https://expo.dev/preview/update?message=update&updateRuntimeVersion=1.0.0&createdAt=2025-09-28T19%3A54%3A52.385Z&slug=exp&projectId=8f03fd4b-9a97-4731-8f49-ab56be8e2a78&group=f7845468-e68a-4bdc-a936-2d318d62348f"
+    },
+    "demos": [{ "demo": "" }, { "demo": "" }, { "demo": "" }],
+    "notes": "Need Expo Go to scan barcode and view app"
   },
   {
     "id": "countries",
@@ -40,7 +42,8 @@
     "external_links": {
       "github": "",
       "demo": ""
-    }
+    },
+    "demos": [{ "demo": "" }, { "demo": "" }, { "demo": "" }]
   },
   {
     "id": "pokedex",
@@ -57,7 +60,8 @@
     "external_links": {
       "github": "",
       "demo": ""
-    }
+    },
+    "demos": [{ "demo": "" }, { "demo": "" }, { "demo": "" }]
   },
   {
     "id": "workout",
@@ -74,6 +78,7 @@
     "external_links": {
       "github": "",
       "demo": ""
-    }
+    },
+    "demos": [{ "demo": "" }, { "demo": "" }, { "demo": "" }]
   }
 ]

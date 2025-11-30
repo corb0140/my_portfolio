@@ -61,4 +61,12 @@ textarea {
   .animate-beat {
     animation: beat 0.8s ease-in-out infinite alternate;
   }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
