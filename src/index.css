@@ -48,4 +48,17 @@ textarea {
 }
 
 @layer utilities {
+  @keyframes beat {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .animate-beat {
+    animation: beat 0.8s ease-in-out infinite alternate;
+  }
 }
