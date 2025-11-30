@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import Logo from "./UI/Logo";
 import gsap from "gsap";
 import MobileNavModal from "./MobileNavModal";
@@ -9,6 +9,14 @@ function Header() {
     "h-[3px] w-full bg-primary rounded-[5px] absolute left-0 top-0";
 
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isOpen]);
 
   const bar1Ref = useRef(null);
   const bar2Ref = useRef(null);
