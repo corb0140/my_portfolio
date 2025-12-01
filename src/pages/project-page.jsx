@@ -26,14 +26,15 @@ function ProjectPage() {
   if (!data) return <p>Loading...</p>;
 
   return (
-    <div className="h-auto flex flex-col gap-5 overflow-hidden">
+    <div className="h-auto flex flex-col overflow-hidden">
       <div className="mt-10 mb-20 p-5">
         <h1 className="uppercase font-bold text-4xl max-w-100 tracking-wide">
           {data.title}
         </h1>
       </div>
 
-      <div className="h-70 w-full rounded-md pl-5 overflow-x-auto no-scrollbar">
+      <div className="h-90 w-full rounded-md pl-5 overflow-x-auto no-scrollbar">
+        {/* DEMOS */}
         <div
           className="relative h-full"
           style={{
@@ -55,6 +56,7 @@ function ProjectPage() {
         </div>
       </div>
 
+      {/* TECH */}
       <div className="flex gap-1.5 flex-wrap p-5">
         {data.tech?.map((item, index) => (
           <span
@@ -66,6 +68,7 @@ function ProjectPage() {
         ))}
       </div>
 
+      {/* DESCRIPTION */}
       <p className="p-5">{data.description}</p>
 
       {/* EXTERNAL LINKS */}
@@ -93,6 +96,7 @@ function ProjectPage() {
         {data.notes && <p className="text-sm">Note: {data.notes}</p>}
       </div>
 
+      {/* MOTIVE */}
       <div className="mt-10 flex flex-col gap-10 p-5">
         <h2 className="text-primary/90 uppercase text-[17px]">
           Why This Project

@@ -1,7 +1,7 @@
 [
   {
     "id": "movies",
-    "image": "/images/projects/movies.png",
+    "image": "/src/assets/images/movies-logo.png",
     "title": "Movies App",
     "description": "A cross-platform mobile app for iOS and Android. Search for any movie and get all the information you need. Save your favorite movies and test your knowledge with quizzes",
     "link": "/projects/movies",
@@ -13,14 +13,14 @@
     ],
     "external_links": {
       "github": "https://github.com/corb0140/Movies_App_RN",
-      "demo": "https://expo.dev/preview/update?message=update&updateRuntimeVersion=1.0.0&createdAt=2025-09-28T19%3A54%3A52.385Z&slug=exp&projectId=8f03fd4b-9a97-4731-8f49-ab56be8e2a78&group=f7845468-e68a-4bdc-a936-2d318d62348f"
+      "demo": "https://expo.dev/preview/update?message=splash+image&updateRuntimeVersion=1.0.0&createdAt=2025-11-30T23%3A42%3A19.356Z&slug=exp&projectId=8f03fd4b-9a97-4731-8f49-ab56be8e2a78&group=25a74d1c-0db1-4f60-9bcf-af7f8139fd83"
     },
     "demos": [{ "demo": "" }, { "demo": "" }, { "demo": "" }],
     "notes": "Need Expo Go to scan barcode and view app"
   },
   {
     "id": "countries",
-    "image": "/images/projects/geocentral.png",
+    "image": "/src/assets/images/geocentral-logo.png",
     "title": "Geo Central",
     "description": "A countries information dashboard that provides detailed country profiles, side-by-side comparisons, currency conversion, real-time weather data, and interactive quizzes to reinforce geographic knowledge.",
     "link": "/projects/countries",
@@ -47,7 +47,7 @@
   },
   {
     "id": "pokedex",
-    "image": "/images/projects/pokedex.png",
+    "image": "/src/assets/images/pokedex-logo.png",
     "title": "PokeDex",
     "description": "A complete Pokédex experience featuring live Pokémon data, advanced filtering, and smooth UI interactions. Users can quickly search Pokémon by name or ID, filter by one or multiple types, and open detailed profile pages that include stats, abilities, moves, and full evolution trees",
     "link": "/projects/pokedex",
