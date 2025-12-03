@@ -13,7 +13,7 @@
     ],
     "external_links": {
       "github": "https://github.com/corb0140/Movies_App_RN",
-      "screen": "https://expo.dev/preview/update?message=design+update&updateRuntimeVersion=1.0.0&createdAt=2025-12-02T21%3A09%3A07.225Z&slug=exp&projectId=8f03fd4b-9a97-4731-8f49-ab56be8e2a78&group=673255c8-dd88-4494-b77c-cd15b5d9670b"
+      "demo": "https://expo.dev/preview/update?message=design+update&updateRuntimeVersion=1.0.0&createdAt=2025-12-02T21%3A09%3A07.225Z&slug=exp&projectId=8f03fd4b-9a97-4731-8f49-ab56be8e2a78&group=673255c8-dd88-4494-b77c-cd15b5d9670b"
     },
     "screens": [
       { "screen": "/src/assets/home-screen.svg" },
@@ -46,7 +46,7 @@
     ],
     "external_links": {
       "github": "",
-      "screen": ""
+      "demo": ""
     },
     "screens": [{ "screen": "" }, { "screen": "" }, { "screen": "" }]
   },
@@ -64,7 +64,7 @@
     ],
     "external_links": {
       "github": "",
-      "screen": ""
+      "demo": ""
     },
     "screens": [{ "screen": "" }, { "screen": "" }, { "screen": "" }]
   },
@@ -82,7 +82,7 @@
     ],
     "external_links": {
       "github": "",
-      "screen": ""
+      "demo": ""
     },
     "screens": [{ "screen": "" }, { "screen": "" }, { "screen": "" }]
   }

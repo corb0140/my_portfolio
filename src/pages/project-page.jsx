@@ -38,13 +38,17 @@ function ProjectPage() {
         <div
           className="relative h-full"
           style={{
-            width: `${data.screens.length * 70}%`,
+            width: `${
+              window.innerWidth >= 768
+                ? data.screens.length * 44.5
+                : data.screens.length * 70
+            }%`,
           }}
         >
           {data.screens.map((item, index) => (
             <div
               key={index}
-              className="absolute w-65 p-2 h-full rounded-md flex items-center justify-center bg-primary/95"
+              className="absolute w-65 md:w-80 p-2 h-full rounded-md flex items-center justify-center bg-primary/95"
               style={{
                 transform: `translateX(${index * 100}%)`,
                 marginLeft: `${index * 0.7}rem`,
@@ -65,7 +69,7 @@ function ProjectPage() {
         {data.tech?.map((item, index) => (
           <span
             key={item + index}
-            className="text-sm p-1.5 rounded-sm text-primary border border-primary"
+            className="text-sm md:text-lg p-1.5 rounded-sm text-primary border border-primary"
           >
             {item}
           </span>
@@ -73,7 +77,7 @@ function ProjectPage() {
       </div>
 
       {/* DESCRIPTION */}
-      <p className="p-5">{data.description}</p>
+      <p className="p-5 md:text-xl">{data.description}</p>
 
       {/* EXTERNAL LINKS */}
       <div className="p-5 flex flex-col gap-3">
@@ -81,7 +85,7 @@ function ProjectPage() {
           <a
             href={data.external_links.demo}
             target="_blank"
-            className="bg-primary/90 py-2.5 px-4.5 text-sm flex items-center gap-1 text-tertiary rounded-sm"
+            className="bg-primary/90 py-2.5 px-4.5 md:py-3.5 md:px-5.5 text-sm md:text-lg flex items-center gap-1 text-tertiary rounded-sm"
           >
             Demo
             <SquareArrowOutUpRight className="h-4 w-4" />
@@ -90,25 +94,27 @@ function ProjectPage() {
           <a
             href={data.external_links.github}
             target="_blank"
-            className="bg-primary/90 py-2.5 px-4.5 text-sm flex items-center gap-1 text-tertiary rounded-sm"
+            className="bg-primary/90 py-2.5 px-4.5 md:py-3.5 md:px-5.5 text-sm md:text-lg flex items-center gap-1 text-tertiary rounded-sm"
           >
             Github
             <SquareArrowOutUpRight className="h-4 w-4" />
           </a>
         </div>
 
-        {data.notes && <p className="text-sm">Note: {data.notes}</p>}
+        {data.notes && <p className="text-sm md:text-xl">Note: {data.notes}</p>}
       </div>
 
       {/* MOTIVE */}
       <div className="mt-10 flex flex-col gap-10 p-5">
-        <h2 className="text-primary/90 uppercase text-[17px]">
+        <h2 className="text-primary/90 uppercase text-[17px] md:text-2xl">
           Why This Project
         </h2>
 
         <div className="flex flex-col gap-3">
           {data.motive?.map((para, index) => (
-            <span key={index}>{para}</span>
+            <span key={index} className="md:text-xl">
+              {para}
+            </span>
           ))}
         </div>
       </div>

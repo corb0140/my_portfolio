@@ -56,13 +56,17 @@ function AboutPage() {
   }, []);
 
   return (
-    <div className="p-5">
-      <h1 className="uppercase font-bold text-4xl max-w-50">Get to know me</h1>
+    <div className="p-8">
+      <h1 className="uppercase font-bold text-4xl md:text-5xl max-w-50 md:max-w-80">
+        Get to know me
+      </h1>
 
-      <div className="mt-10 flex flex-col gap-5 h-auto w-full">
+      <div className="mt-10 flex flex-col gap-5 md:gap-8 h-auto w-full">
         <span ref={backgroundRef} className="opacity-0">
-          <h2 className="uppercase text-lg tracking-wide">Background</h2>
-          <span className="text-sm mt-2 flex flex-col gap-2">
+          <h2 className="uppercase text-lg md:text-2xl tracking-wide">
+            Background
+          </h2>
+          <span className="text-sm md:text-xl mt-2 flex flex-col gap-2 md:max-w-180 tracking-wide leading-5 md:leading-8">
             <p>
               I'm originally from Barbados, where I built a strong foundation in
               customer service and operations. I started my career in guest
@@ -89,10 +93,10 @@ function AboutPage() {
         </span>
 
         <span ref={interestsRef} className="opacity-0">
-          <h2 className="uppercase text-lg tracking-wide">
+          <h2 className="uppercase text-lg md:text-2xl tracking-wide">
             A bit more about me
           </h2>
-          <span className="text-sm mt-2 flex flex-col gap-2">
+          <span className="text-sm md:text-xl mt-2 flex flex-col gap-2 md:max-w-180 tracking-wide leading-5 md:leading-8">
             <p>
               I consider myself a social introvert, someone who genuinely enjoys
               connecting with people but also needs time alone to recharge and
@@ -120,29 +124,24 @@ function AboutPage() {
             <p>
               I've also been a devoted FC Barcelona supporter for as long as I
               can remember. The club's style of play, history, and football
-              philosophy drew me in early. They go through rough patches a lot,
-              but supporting someone or something in their worst moments is
-              trait worth having.
+              philosophy drew me in early. When at their best I believe there is
+              no team more exciting to watch.
             </p>
 
             <p>
-              Music is another big part of my life. I enjoy listening across all
+              Music is another big part of my life. I enjoy listening to all
               genres, not because of trends, but because I genuinely appreciate
-              the craft behind it. Whether it's hip-hop, soca, rock, pop,
+              the craft behind it. Whether it's hip-hop, country, rock, soca,
               electronic, or classical, I love listening to it all.
-            </p>
-
-            <p>
-              Overall, my interests reflect who I am: a curious, creative social
-              introvert who finds inspiration in storytelling, art, strategy,
-              community, and culture.
             </p>
           </span>
         </span>
 
         <span ref={frontendRef} className="opacity-0">
-          <h2 className="uppercase text-lg tracking-wide">Why Frontend</h2>
-          <span className="text-sm mt-2 flex flex-col gap-2">
+          <h2 className="uppercase text-lg md:text-2xl tracking-wide">
+            Why Frontend
+          </h2>
+          <span className="text-sm md:text-xl mt-2 flex flex-col gap-2 md:max-w-180 tracking-wide leading-5 md:leading-8">
             <p>
               I chose frontend development because I love the creative side of
               building on the web. There's something special about taking an
@@ -177,14 +176,16 @@ function AboutPage() {
         </span>
 
         <span ref={technologiesRef} className="opacity-0">
-          <h2 className="uppercase text-lg tracking-wide">Technologies</h2>
+          <h2 className="uppercase text-lg md:text-2xl tracking-wide">
+            Technologies
+          </h2>
 
           {/* GRID & DRAGGABLE */}
           <div className="mt-3">
             {data.map((item, index) => (
               <span
                 key={index}
-                className="text-sm mt-2 mx-1 p-1 px-2 inline-block bg-primary/90 text-white rounded-sm"
+                className="text-sm md:text-xl mt-2 mx-1 py-1 px-2 md:py-2 md:px-3 inline-block bg-primary/90 text-white rounded-sm"
               >
                 {item}
               </span>

@@ -101,25 +101,27 @@ function ContactPage() {
   };
 
   return (
-    <div className="p-5 flex flex-col">
+    <div className="p-8 flex flex-col md:items-center">
       {/* TITLE */}
-      <div className="flex flex-col gap-2">
-        <p className="text-sm font-normal">
+      <div className="flex flex-col gap-2 self-start">
+        <p className="text-sm md:text-lg font-normal">
           Let's build something great together
         </p>
-        <h1 className="uppercase text-4xl">Send Me A Message</h1>
+        <h1 className="uppercase text-4xl md:text-6xl md:max-w-150">
+          Send Me A Message
+        </h1>
       </div>
 
       {/* FORM */}
       <form
         action="POST"
         onSubmit={submitFormHandler}
-        className="flex flex-col gap-6 mt-15"
+        className="flex flex-col gap-6 mt-15 md:mt-20 md:w-2/3"
       >
         <div className="relative">
           <label
             htmlFor="name"
-            className="absolute bg-tertiary text-sm -top-2.5 left-2 px-1"
+            className="absolute bg-tertiary text-sm md:text-lg -top-2.5 md:-top-3.5 left-2 px-1"
           >
             Name
           </label>
@@ -128,7 +130,7 @@ function ContactPage() {
             type="text"
             name="name"
             id="name"
-            className="h-12 rounded-sm w-full border pl-2"
+            className="h-12 md:h-15 rounded-sm w-full border pl-2 md:text-xl"
             value={formData.name}
             onChange={(e) =>
               setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -139,7 +141,7 @@ function ContactPage() {
         <div className="relative">
           <label
             htmlFor="name"
-            className="absolute bg-tertiary text-sm -top-2.5 left-2 px-1"
+            className="absolute bg-tertiary text-sm md:text-lg -top-2.5 md:-top-3.5 left-2 px-1"
           >
             Email
           </label>
@@ -148,7 +150,7 @@ function ContactPage() {
             type="email"
             name="email"
             id="email"
-            className="h-12 rounded-sm w-full border pl-2"
+            className="h-12 md:h-15 rounded-sm w-full border pl-2 md:text-xl"
             value={formData.email}
             onChange={(e) =>
               setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -159,7 +161,7 @@ function ContactPage() {
         <div className="relative">
           <label
             htmlFor="name"
-            className="absolute bg-tertiary text-sm -top-2.5 left-2 px-1"
+            className="absolute bg-tertiary text-sm md:text-lg -top-2.5 md:-top-3.5 left-2 px-1"
           >
             Message
           </label>
@@ -167,7 +169,7 @@ function ContactPage() {
           <textarea
             name="message"
             id="message"
-            className="h-40 rounded-sm w-full border p-1.5"
+            className="h-40 md:h-45 rounded-sm w-full border p-1.5 md:text-xl"
             value={formData.message}
             onChange={(e) =>
               setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -179,7 +181,7 @@ function ContactPage() {
           disabled={!isValid || isLoading}
           className={`py-2 px-10 uppercase transition duration-200 ${
             !isValid ? "bg-primary/20" : "bg-primary/90"
-          } text-tertiary text-sm rounded-sm self-start`}
+          } text-tertiary text-sm md:text-lg rounded-sm self-start`}
         >
           {isLoading ? (
             <>
@@ -194,10 +196,10 @@ function ContactPage() {
 
       {/* FACE */}
       <div onClick={handleFaceChange} className="w-fit mt-5 self-center">
-        <div className="relative h-25 w-25 rounded-full border border-primary shadow-[2px_3px_5px_rgb(34,34,34,.7)]">
+        <div className="relative h-25 w-25 md:h-40 md:w-40 rounded-full border border-primary shadow-[2px_3px_5px_rgb(34,34,34,.7)]">
           {/* ANGRY ICON */}
           <div
-            className={`absolute -top-1 right-1 grid grid-cols-2 gap-0.5 -rotate-10 h-6 w-6 ${
+            className={`absolute -top-1 md:top-2 right-1 md:right-2 grid grid-cols-2 gap-0.5 md:gap-1 -rotate-10 h-6 w-6 md:h-8 md:w-8 ${
               isAngry ? "animate-beat" : "scale-0 opacity-0"
             }`}
           >
@@ -209,22 +211,24 @@ function ContactPage() {
 
           {/* EYES */}
           <div
-            className={`absolute flex items-center justify-center gap-3 top-4.5 left-[50%] -translate-x-[55%] h-7`}
+            className={`absolute flex items-center justify-center gap-3 top-4.5 md:top-8 left-[50%] -translate-x-[55%] h-7 md:h-9`}
           >
             {/* LEFT EYE */}
             <div
               className={` transition-all duration-500 border rounded-full ${
                 awake ? "border-primary" : "border-tertiary"
               } ${
-                isAngry ? "h-0.5 w-5" : "h-7 w-6.5"
+                isAngry ? "h-0.5 w-5 md:w-6" : "h-7 md:h-9 w-6.5 md:w-8.5"
               } relative overflow-hidden`}
             >
+              {/* EYE LID */}
               <div
                 className={`h-full w-full border-b-2 rounded-b-full bg-tertiary absolute transition-all duration-300 ${
                   awake ? "-top-10" : "top-0"
                 } z-10`}
               ></div>
 
+              {/* IRIS */}
               <div
                 className={`absolute top-0 bg-primary h-5 ${
                   awake ? "w-full" : "w-0"
@@ -237,15 +241,17 @@ function ContactPage() {
               className={`transition-all duration-500 border rounded-full ${
                 awake ? "border-primary" : "border-tertiary"
               } ${
-                isAngry ? "h-0.5 w-5" : "h-7 w-6.5"
+                isAngry ? "h-0.5 w-5 md:w-6" : "h-7 md:h-9 w-6.5 md:w-8.5"
               } relative overflow-hidden`}
             >
+              {/* EYE LID */}
               <div
                 className={`h-full w-full border-b-2 rounded-b-full bg-tertiary absolute transition-all duration-300 ${
                   awake ? "-top-10" : "top-0"
                 } z-10`}
               ></div>
 
+              {/* IRIS */}
               <div
                 className={`absolute top-0 bg-primary h-5 ${
                   awake ? "w-full" : "w-0"
@@ -257,23 +263,23 @@ function ContactPage() {
           {/* MOUTH */}
           <div
             ref={mouthSleepRef}
-            className="absolute bottom-5 left-1/2 -translate-x-1/2 w-10 h-5 flex items-center justify-center"
+            className="absolute bottom-5 md:bottom-8 left-1/2 -translate-x-1/2 w-10 h-5 flex items-center justify-center"
           >
             <div
               className={`border-r-2 rounded-r-md transition-all duration-300 ${
-                isAngry ? "h-3 w-2" : "h-0 w-0"
+                isAngry ? "h-3 w-2 md:h-4 md:w-5" : "h-0 w-0"
               }`}
             ></div>
 
             <div
-              className={`transition-all duration-500 border w-4 ${
-                awake ? "h-0.5 rounded-sm" : "h-4 rounded-full"
+              className={`transition-all duration-500 border w-4 md:w-7 ${
+                awake ? "h-0.5 rounded-sm" : "h-4 md:h-7 rounded-full"
               }`}
             ></div>
 
             <div
               className={`border-l-2 rounded-l-md transition-all duration-300 ${
-                isAngry ? "h-3 w-2" : "h-0 w-0"
+                isAngry ? "h-3 w-2 md:h-4 md:w-5" : "h-0 w-0"
               }`}
             ></div>
           </div>
@@ -282,7 +288,7 @@ function ContactPage() {
 
       {/* MESSAGE */}
       {isAngry && (
-        <span className="w-full text-center mt-1 text-sm font-bold">
+        <span className="w-full text-center mt-1 md:mt-3 text-sm md:text-xl font-bold">
           Hey! Don't touch me.
         </span>
       )}

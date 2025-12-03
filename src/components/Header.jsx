@@ -2,7 +2,8 @@ import { useRef, useState, useEffect } from "react";
 import Logo from "./UI/Logo";
 import gsap from "gsap";
 import MobileNavModal from "./MobileNavModal";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
+import { MoveUpRight } from "lucide-react";
 
 function Header() {
   const hamburgerMenu =
@@ -54,20 +55,55 @@ function Header() {
 
   return (
     <>
-      <header className="p-4 flex justify-between items-center relative">
+      <header className="p-4 md:py-5 md:px-8 flex justify-between items-center relative">
         <Link to="/">
           <Logo />
         </Link>
 
         <button
           ref={buttonRef}
-          className="relative flex items-center h-4 w-5"
+          className="relative flex items-center h-4 w-5 md:hidden"
           onClick={() => (isOpen ? closeMenu() : openMenu())}
         >
           <span ref={bar1Ref} className={`${hamburgerMenu}`}></span>
           <span ref={bar2Ref} className={`${hamburgerMenu} top-1.5`}></span>
           <span ref={bar3Ref} className={`${hamburgerMenu} top-3`}></span>
         </button>
+
+        <ul className="hidden md:flex gap-6">
+          {[
+            { name: "Home", page: "/" },
+            { name: "Projects", page: "projects" },
+            { name: "About", page: "about" },
+          ].map((link, index) => (
+            <li key={index}>
+              <NavLink
+                to={link.page}
+                onClick={close}
+                end
+                className={({ isActive }) =>
+                  `transition-all duration-300 ${
+                    isActive
+                      ? "font-bold border-b pb-0.5 "
+                      : "hover:text-red-500"
+                  }`
+                }
+              >
+                {link.name}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+
+        <Link
+          to="contact"
+          className="hidden md:flex gap-1 items-center mt-auto"
+          onClick={close}
+        >
+          <p className="border-b border-white pb-0.2 text-[16px]">Contact</p>
+
+          <MoveUpRight className="h-3.5 w-3.5" />
+        </Link>
       </header>
 
       <MobileNavModal ref={modalRef} close={() => closeMenu()} />

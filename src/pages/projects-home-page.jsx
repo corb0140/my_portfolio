@@ -34,11 +34,18 @@ function ProjectsHomePage() {
   return (
     <>
       <div className="p-8 flex flex-col">
-        <h1 className="uppercase tracking-wide text-2xl">My Projects</h1>
+        <h1 className="uppercase tracking-wide text-2xl md:text-4xl">
+          My Projects
+        </h1>
 
-        <div className="mt-20 grid grid-cols-1 gap-8">
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8">
           {data.map((item, index) => (
-            <Link to={item.link} key={index} className="flex flex-col gap-2">
+            <Link
+              to={item.link}
+              key={index}
+              className="flex flex-col gap-2 md:gap-3"
+            >
+              {/* IMAGE */}
               <div
                 className="h-45 w-full rounded-md hover:cursor-none bg-primary/90 flex flex-col items-center justify-center"
                 onMouseEnter={() => setShowCursor(true)}
@@ -61,9 +68,11 @@ function ProjectsHomePage() {
                 )}
               </div>
 
-              <h2>{item.title}</h2>
+              {/* 'TITLE' */}
+              <h2 className="md:text-xl">{item.title}</h2>
 
-              <p className="text-sm">{item.description}</p>
+              {/* DESCRIPTION */}
+              <p className="text-sm md:text-lg">{item.description}</p>
             </Link>
           ))}
         </div>
