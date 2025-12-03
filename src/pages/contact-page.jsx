@@ -114,7 +114,7 @@ function ContactPage() {
       <form
         action="POST"
         onSubmit={submitFormHandler}
-        className="flex flex-col gap-6 mt-8"
+        className="flex flex-col gap-6 mt-15"
       >
         <div className="relative">
           <label

@@ -13,9 +13,14 @@
     ],
     "external_links": {
       "github": "https://github.com/corb0140/Movies_App_RN",
-      "demo": "https://expo.dev/preview/update?message=splash+image&updateRuntimeVersion=1.0.0&createdAt=2025-11-30T23%3A42%3A19.356Z&slug=exp&projectId=8f03fd4b-9a97-4731-8f49-ab56be8e2a78&group=25a74d1c-0db1-4f60-9bcf-af7f8139fd83"
+      "screen": "https://expo.dev/preview/update?message=design+update&updateRuntimeVersion=1.0.0&createdAt=2025-12-02T21%3A09%3A07.225Z&slug=exp&projectId=8f03fd4b-9a97-4731-8f49-ab56be8e2a78&group=673255c8-dd88-4494-b77c-cd15b5d9670b"
     },
-    "demos": [{ "demo": "" }, { "demo": "" }, { "demo": "" }],
+    "screens": [
+      { "screen": "/src/assets/home-screen.svg" },
+      { "screen": "/src/assets/details-screen.svg" },
+      { "screen": "/src/assets/watch-list-screen.svg" },
+      { "screen": "/src/assets/quiz-screen.svg" }
+    ],
     "notes": "Need Expo Go to scan barcode and view app"
   },
   {
@@ -41,9 +46,9 @@
     ],
     "external_links": {
       "github": "",
-      "demo": ""
+      "screen": ""
     },
-    "demos": [{ "demo": "" }, { "demo": "" }, { "demo": "" }]
+    "screens": [{ "screen": "" }, { "screen": "" }, { "screen": "" }]
   },
   {
     "id": "pokedex",
@@ -59,9 +64,9 @@
     ],
     "external_links": {
       "github": "",
-      "demo": ""
+      "screen": ""
     },
-    "demos": [{ "demo": "" }, { "demo": "" }, { "demo": "" }]
+    "screens": [{ "screen": "" }, { "screen": "" }, { "screen": "" }]
   },
   {
     "id": "workout",
@@ -69,7 +74,7 @@
     "title": "Workout",
     "description": "A landing page built to market a fitness membership, showcasing premium workout access, member-only content, and compelling calls-to-action to drive sign-ups",
     "link": "/projects/workout",
-    "tech": ["Vue", "JavaScript", "TailwindCSS"],
+    "tech": ["Vue", "JavaScript", "TailwindCSS", "Responsive"],
     "motive": [
       "This project was an opportunity to practice building a modern landing page focused on marketing a fitness membership.",
       "I used it to improve my ability to design clean, high-impact layouts and communicate value quickly through strong visual hierarchy.",
@@ -77,8 +82,8 @@
     ],
     "external_links": {
       "github": "",
-      "demo": ""
+      "screen": ""
     },
-    "demos": [{ "demo": "" }, { "demo": "" }, { "demo": "" }]
+    "screens": [{ "screen": "" }, { "screen": "" }, { "screen": "" }]
   }
 ]

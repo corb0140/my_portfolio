@@ -34,23 +34,27 @@ function ProjectPage() {
       </div>
 
       <div className="h-90 w-full rounded-md pl-5 overflow-x-auto no-scrollbar">
-        {/* DEMOS */}
+        {/* screens */}
         <div
           className="relative h-full"
           style={{
-            width: `${data.demos.length * 100 - 20}%`,
+            width: `${data.screens.length * 70}%`,
           }}
         >
-          {data.demos.map((item, index) => (
+          {data.screens.map((item, index) => (
             <div
               key={index}
-              className="absolute w-75 h-full border rounded-md"
+              className="absolute w-65 p-2 h-full rounded-md flex items-center justify-center bg-primary/95"
               style={{
                 transform: `translateX(${index * 100}%)`,
                 marginLeft: `${index * 0.7}rem`,
               }}
             >
-              {item.demo}
+              <img
+                src={item.screen}
+                alt={`image of ${data.title} screen`}
+                className="h-full w-full"
+              />
             </div>
           ))}
         </div>

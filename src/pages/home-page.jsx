@@ -90,7 +90,7 @@ function HomePage() {
       <img
         src={me}
         alt=""
-        className="grayscale-80 h-1/2 w-full object-cover mt-auto"
+        className="grayscale-80 h-auto w-full object-cover mt-auto"
       />
     </div>
   );
