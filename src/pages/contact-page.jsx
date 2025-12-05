@@ -101,7 +101,7 @@ function ContactPage() {
   };
 
   return (
-    <div className="p-8 flex flex-col md:items-center">
+    <div className="p-8 flex flex-col md:items-center lg:top-17 relative">
       {/* TITLE */}
       <div className="flex flex-col gap-2 self-start">
         <p className="text-sm md:text-lg font-normal">

@@ -56,7 +56,7 @@ function AboutPage() {
   }, []);
 
   return (
-    <div className="p-8">
+    <div className="p-8 ">
       <h1 className="uppercase font-bold text-4xl md:text-5xl max-w-50 md:max-w-80">
         Get to know me
       </h1>

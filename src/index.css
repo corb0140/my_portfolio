@@ -43,6 +43,14 @@ textarea {
 }
 
 @layer base {
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-none {
+    -ms-overflow-style: none; /* IE & Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 @layer components {

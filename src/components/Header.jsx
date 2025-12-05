@@ -55,7 +55,7 @@ function Header() {
 
   return (
     <>
-      <header className="p-4 md:py-5 md:px-8 flex justify-between items-center relative">
+      <header className="p-4 md:py-5 md:px-8 relative lg:fixed lg:w-full flex justify-between items-center z-20 bg-tertiary">
         <Link to="/">
           <Logo />
         </Link>
@@ -82,10 +82,10 @@ function Header() {
                 onClick={close}
                 end
                 className={({ isActive }) =>
-                  `transition-all duration-300 ${
+                  `transition-all duration-300 lg:text-[16px] ${
                     isActive
-                      ? "font-bold border-b pb-0.5 "
-                      : "hover:text-red-500"
+                      ? "font-semibold border-b pb-0.5 "
+                      : "hover:font-bold"
                   }`
                 }
               >
